@@ -1,0 +1,36 @@
+//#region position & display
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+.fixed {
+    position: fixed;
+}
+
+//display:
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.none {
+    display: none;
+}
+
+
+.align-baseline {
+    align-items: baseline
+}
