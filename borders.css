@@ -1,0 +1,37 @@
+@import './vars';
+
+@mixin border-modifiers {
+
+    @each $color,
+    $value in $colors {
+        @each $direction in $directions {
+            &-#{$direction}-#{$color} {
+                border-#{$direction}: 1px solid $value;
+            }
+        }
+    }
+}
+
+.border {
+    @include border-modifiers;
+}
+.border-rounded {
+  border-radius: 4px;
+}
+.border-secondary {
+  border: 1px solid $secondary-color;
+}
+.borderless {
+    border: 0;
+}
+
+
+/* generates : */
+// .border-top-secondary {
+//     border-top: 1px solid $secondary-color;
+// }
+
+// .border-right-secondary {
+//     border-right: 1px solid $secondary-color;
+// }
+// ...
