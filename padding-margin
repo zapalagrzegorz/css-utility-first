@@ -1,0 +1,48 @@
+$sizes: (
+  small: .5rem,
+  normal: 1rem,
+  large: 2rem,
+  xlarge: 3rem,
+  xxlarge: 4rem
+);
+
+$directions: ('top', 'right', 'bottom', 'left');
+
+// https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps
+
+@mixin padding-modifiers {
+  @each $size, $value in $sizes {
+    @each $direction in $directions {
+      &-#{$direction}-#{$size} {
+        padding-#{$direction}: $value;
+      }
+    }
+  }
+}
+
+@mixin padding-sizes {
+    @each $size, $value in $sizes {
+        &-#{$size} {
+          padding: $value;
+        }
+    }
+  }
+
+@mixin margin-modifiers {
+  @each $size, $value in $sizes {
+    @each $direction in $directions {
+      &-#{$direction}-#{$size} {
+        margin-#{$direction}: $value;
+      }
+    }
+  }
+}
+
+.padding {
+  @include padding-modifiers;
+  @include padding-sizes;
+}
+
+.margin {
+    @include margin-modifiers;
+}
