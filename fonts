@@ -1,0 +1,111 @@
+//#region fonts
+.font-normal {
+    font-weight: 400;
+}
+
+.font-bolder {
+    font-weight: bolder;
+}
+
+.font-lighter {
+    font-weight: lighter;
+}
+
+.font-bigger {
+    font-size: larger;
+}
+
+.font-smaller {
+    font-size: smaller;
+}
+
+.to-upper {
+    text-transform: uppercase;
+}
+
+.to-lower {
+    text-transform: lowercase;
+}
+
+
+.h1,
+h1 {
+    font-size: 26px;
+
+    @include breakpoint(medium up) {
+        font-size: 48px;
+    }
+}
+
+.h2,
+h2 {
+    font-size: 22px;
+    line-height: 1.6;
+
+    @include breakpoint(medium up) {
+        font-size: 40px;
+    }
+}
+
+.h3,
+h3 {
+    font-size: 21px;
+
+    @include breakpoint(medium up) {
+        font-size: 31px;
+    }
+}
+
+.h4,
+h4 {
+    font-size: 20px;
+
+    @include breakpoint (medium up) {
+        font-size: 25px;
+    }
+}
+
+.h5,
+h5 {
+    font-size: 19px;
+
+    @include breakpoint (medium up) {
+        font-size: 22px;
+    }
+}
+
+.h6,
+h6 {
+    font-size: 16px;
+
+    @include breakpoint (medium up) {
+        font-size: 18px;
+    }
+}
+
+
+
+.font-70 {
+    font-size: rem-calc(70px);
+    line-height: 1;
+}
+
+.font-16 {
+    font-size: rem-calc(16);
+}
+
+.font-15 {
+    font-size: rem-calc(15px);
+}
+
+.font-13 {
+    font-size: rem-calc(13px);
+}
+
+.font-12 {
+    font-size: rem-calc(12px);
+}
+
+.font-11 {
+    font-size: rem-calc(11px);
+}
