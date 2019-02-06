@@ -1,0 +1,196 @@
+//#region COLORS
+$black: #272727;
+$light-grey: #A0A0A0;
+$grey-clock: #ABB3BE;
+$grey: rgb(50, 50, 50);
+$past-events: #f2f4f5;
+$primary-lighter: #ffedb6;
+$primary-lighty: rgb(255, 225, 135);
+$primary-light: rgb(255, 212, 87);
+// primary-color: rgb(255, 195, 42)
+// chartline: 255, 183, 0
+$background-contact-float: #236bb2;
+$full-chart-bg: rgb(0, 100, 194);
+$full-chart-bg--ticker: rgb(0, 84, 166);
+$search-title-background: #ebebeb;
+$tabular-chart-background: #fafafa;
+// #f2f4f5
+
+.primary-color {
+    color: $primary-color;
+}
+
+.primary-color-fill {
+    fill: $primary-color;
+
+    &--transparent {
+        opacity: .5;
+    }
+}
+
+.secondary-color {
+    color: $secondary-color;
+}
+
+
+.fill-secondary-color {
+    fill: $secondary-color;
+}
+
+.white {
+    color: white;
+}
+
+.black-full {
+    color: #000;
+}
+
+.white-fill,
+.fill-white {
+    fill: white !important;
+
+    &--transparent {
+        fill: rgba(255, 255, 255, .8);
+    }
+}
+
+.black {
+    color: $black;
+
+    &--hover:hover {
+        color: $black;
+    }
+}
+
+.black-fill {
+    fill: $black;
+}
+
+.grey-fill {
+    fill: grey;
+
+    &--transparent {
+        opacity: .5;
+    }
+}
+
+.light-grey-fill {
+    fill: $light-grey;
+
+    &--transparent {
+        opacity: .5;
+    }
+}
+
+.primary-background {
+    background-color: $primary-color;
+}
+
+.primary-background--lighter {
+    background-color: $primary-lighter;
+}
+
+.primary-background--lighty {
+    background-color: rgb(255, 225, 135);
+}
+
+.primary-background--light {
+    background-color: rgb(255, 212, 87);
+}
+
+.background-secondary {
+    background-color: $secondary-color;
+}
+
+.background-secondary--darker {
+    background-color: $full-chart-bg--ticker;
+}
+
+.past-event-background {
+    background-color: $past-events;
+}
+
+
+.full-chart-bg {
+    background-color: $full-chart-bg;
+}
+
+.fill-full-chart-bg {
+    fill: $full-chart-bg;
+}
+
+.search-title-background {
+    background-color: $search-title-background;
+}
+
+.tabular-chart-background {
+    background-color: $tabular-chart-background
+}
+
+//#endregion
+
+//#region BRAND COLORS
+
+$fb-blue: #3B5998;
+$twitter-blue: #4099FF;
+$twitter-verified-blue: #1DCAFF;
+
+$twitter-retweet: #17BF63;
+$twitter-like: #E2264D;
+$linkedin-blue: #0077B5;
+$instagram-red: #E1305D;
+$google-plus-red: #D34836;
+
+.fb-color {
+    color: $fb-blue;
+}
+
+.fb-bg {
+    background-color: $fb-blue;
+}
+
+.fb-color-fill {
+    fill: $fb-blue;
+}
+
+.twitter-color-fill, .twitter {
+    fill: $twitter-blue;
+}
+
+.twitter-bg {
+    background-color: #4099FF;
+}
+
+.twitter-verified-blue-color-fill {
+    fill: $twitter-verified-blue;
+}
+
+.twitter-verified-blue-bg {
+    background-color: $twitter-verified-blue;
+}
+
+.linkedin-color {
+    color: $linkedin-blue;
+}
+
+.linkedin-bg {
+    background-color: $linkedin-blue;
+}
+
+.linkedin-color-fill {
+    fill: $linkedin-blue;
+}
+
+.instagram-color-fill {
+    fill: $instagram-red;
+}
+
+.instagram-bg {
+    background-color: $instagram-red;
+}
+
+.googlePlusRed {
+    fill: $google-plus-red;
+}
+
+//#endregion
