@@ -31,6 +31,12 @@
 }
 
 
+/* uzupełnienie helper-flex-classes dla foundation */
 .align-baseline {
     align-items: baseline
+}
+
+/* Własność vertical-align określa wyrównanie pionowe elementów inline lub komórek tabeli.  */
+.vertical-align-middle {
+    vertical-align: middle;
 }
