@@ -4,17 +4,6 @@ $light-grey: #A0A0A0;
 $grey-clock: #ABB3BE;
 $grey: rgb(50, 50, 50);
 $past-events: #f2f4f5;
-$primary-lighter: #ffedb6;
-$primary-lighty: rgb(255, 225, 135);
-$primary-light: rgb(255, 212, 87);
-// primary-color: rgb(255, 195, 42)
-// chartline: 255, 183, 0
-$background-contact-float: #236bb2;
-$full-chart-bg: rgb(0, 100, 194);
-$full-chart-bg--ticker: rgb(0, 84, 166);
-$search-title-background: #ebebeb;
-$tabular-chart-background: #fafafa;
-// #f2f4f5
 
 .primary-color {
     color: $primary-color;
@@ -45,9 +34,8 @@ $tabular-chart-background: #fafafa;
     color: #000;
 }
 
-.white-fill,
 .fill-white {
-    fill: white !important;
+    fill: white;
 
     &--transparent {
         fill: rgba(255, 255, 255, .8);
@@ -153,9 +141,18 @@ $google-plus-red: #D34836;
     fill: $fb-blue;
 }
 
-.twitter-color-fill, .twitter {
+.fb-color-fill-hover:hover {
+    fill: $fb-blue;
+}
+
+.twitter-color-fill {
     fill: $twitter-blue;
 }
+
+.twitter-color-fill-hover:hover {
+    fill: $twitter-blue;
+}
+
 
 .twitter-bg {
     background-color: #4099FF;
@@ -181,16 +178,18 @@ $google-plus-red: #D34836;
     fill: $linkedin-blue;
 }
 
+.linkedin-color-fill-hover:hover {
+    fill: $linkedin-blue;
+}
+
 .instagram-color-fill {
+    fill: $instagram-red;
+}
+
+.instagram-color-fill-hover:hover {
     fill: $instagram-red;
 }
 
 .instagram-bg {
     background-color: $instagram-red;
 }
-
-.googlePlusRed {
-    fill: $google-plus-red;
-}
-
-//#endregion
