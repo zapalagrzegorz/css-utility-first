@@ -1,6 +1,6 @@
-@import './vars'
+@import './vars';
 
-// https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps
+// @see https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps
 
 @mixin padding-modifiers {
   @each $size, $value in $sizes {
