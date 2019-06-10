@@ -1,0 +1,97 @@
+// Social media colors
+
+// TODO to powinna być mapa, aby po dodaniu koloru nie musieć jej ręcznie trzy razy dodawać
+
+$color-facebook: #3b5998;
+$color-twitter: #1da1f2;
+$color-linkedin: #007bb5;
+$color-googleplus: #db4437;
+$color-pinterest: #bd081c;
+$color-youtube: #cd201f;
+$color-instagram: #10171F;
+$color-red: #A83B36;
+$color-yelow: #EEC287;
+$color-blue: #6B99AF;
+$color-green: #559C64;
+$color-turbo: #FFE200;
+
+@mixin colred($bgOrColor, $colorName, $hoverState: false) {
+    @if $bgOrColor == bg {
+        background-color: $colorName;
+    }
+
+    @if $bgOrColor == color {
+        color: $colorName;
+    }
+
+    @if $bgOrColor == fill {
+        fill: $colorName;
+    }
+
+    @if $hoverState == true {
+        
+        &:hover {
+            @if $bgOrColor == bg {
+                background-color: darken($colorName,20%);
+            }
+        
+            @if $bgOrColor == color {
+                color: darken($colorName,20%);
+            }
+        
+            @if $bgOrColor == fill {
+                fill: darken($colorName,20%);
+            }
+        }
+    }
+}
+// 
+.bg-color {
+    &--default { @include colred(bg, $primary-color); &-h {@include colred(bg, $primary-color, true);}}
+    &--facebook { @include colred(bg, $color-facebook); &-h {@include colred(bg, $color-facebook, true);}}
+    &--twitter { @include colred(bg, $color-twitter); &-h {@include colred(bg, $color-twitter, true);}}
+    &--linkedin { @include colred(bg, $color-linkedin); &-h {@include colred(bg, $color-linkedin, true);}}
+    &--googleplus { @include colred(bg, $color-googleplus); &-h {@include colred(bg, $color-googleplus, true);}}
+    &--pinterest { @include colred(bg, $color-pinterest); &-h {@include colred(bg, $color-pinterest, true);}}
+    &--youtube { @include colred(bg, $color-youtube); &-h {@include colred(bg, $color-youtube, true);}}
+    &--instagram { @include colred(bg, $color-instagram); &-h {@include colred(bg, $color-instagram, true);}}
+    &--red, &--15{ @include colred(bg, $color-red); &-h {@include colred(bg, $color-red, true);}}
+    &--yelow, &--331{ @include colred(bg, $color-yelow); &-h {@include colred(bg, $color-yelow, true);}}
+    &--blue, &--68{ @include colred(bg, $color-blue); &-h {@include colred(bg, $color-blue, true);}}
+    &--green{ @include colred(bg, $color-green); &-h {@include colred(bg, $color-green, true);}}
+    &--green{ @include colred(bg, $color-green); &-h {@include colred(bg, $color-green, true);}}
+    &--white{ @include colred(bg, $white); &-h {@include colred(bg, $white, true);}}
+    &--turbo{ @include colred(bg, $color-turbo); &-h {@include colred(bg, $color-turbo, true);}}
+}
+.color {
+    &--default { @include colred(color, $primary-color); &-h {@include colred(color, $primary-color, true);}}
+    &--facebook { @include colred(color, $color-facebook); &-h {@include colred(color, $color-facebook, true);}}
+    &--twitter { @include colred(color, $color-twitter); &-h {@include colred(color, $color-twitter, true);}}
+    &--linkedin { @include colred(color, $color-linkedin); &-h {@include colred(color, $color-linkedin, true);}}
+    &--googleplus { @include colred(color, $color-googleplus); &-h {@include colred(color, $color-googleplus, true);}}
+    &--pinterest { @include colred(color, $color-pinterest); &-h {@include colred(color, $color-pinterest, true);}}
+    &--youtube { @include colred(color, $color-youtube); &-h {@include colred(color, $color-youtube, true);}}
+    &--instagram { @include colred(color, $color-instagram); &-h {@include colred(color, $color-instagram, true);}}
+    &--red, &--15{ @include colred(color, $color-red); &-h {@include colred(color, $color-red, true);}}
+    &--yelow, &--331{ @include colred(color, $color-yelow); &-h {@include colred(color, $color-yelow, true);}}
+    &--blue, &--68{ @include colred(color, $color-blue); &-h {@include colred(color, $color-blue, true);}}
+    &--green{ @include colred(color, $color-green); &-h {@include colred(color, $color-green, true);}}
+    &--white{ @include colred(color, $white); &-h {@include colred(color, $white, true);}}
+    &--turbo{ @include colred(color, $color-turbo); &-h {@include colred(color, $color-turbo, true);}}
+}
+.fill {
+    &--default { @include colred(fill, $primary-color); &-h {@include colred(fill, $primary-color, true);}}
+    &--facebook { @include colred(fill, $color-facebook); &-h {@include colred(fill, $color-facebook, true);}}
+    &--twitter { @include colred(fill, $color-twitter); &-h {@include colred(fill, $color-twitter, true);}}
+    &--linkedin { @include colred(fill, $color-linkedin); &-h {@include colred(fill, $color-linkedin, true);}}
+    &--googleplus { @include colred(fill, $color-googleplus); &-h {@include colred(fill, $color-googleplus, true);}}
+    &--pinterest { @include colred(fill, $color-pinterest); &-h {@include colred(fill, $color-pinterest, true);}}
+    &--youtube { @include colred(fill, $color-youtube); &-h {@include colred(fill, $color-youtube, true);}}
+    &--instagram { @include colred(fill, $color-instagram); &-h {@include colred(fill, $color-instagram, true);}}
+    &--red, &--15{ @include colred(fill, $color-red); &-h {@include colred(fill, $color-red, true);}}
+    &--yelow, &--331{ @include colred(fill, $color-yelow); &-h {@include colred(fill, $color-yelow, true);}}
+    &--blue, &--68{ @include colred(fill, $color-blue); &-h {@include colred(fill, $color-blue, true);}}
+    &--green{ @include colred(fill, $color-green); &-h {@include colred(fill, $color-green, true);}}
+    &--white{ @include colred(fill, $white); &-h {@include colred(fill, $white, true);}}
+    &--turbo{ @include colred(fill, $color-turbo); &-h {@include colred(fill, $color-turbo, true);}}
+}
